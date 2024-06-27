@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: Spartan,sans-serif;
 }
+body{
+    width: 100%;
+}
 
 h1{
     font-size: 50px;
@@ -70,19 +73,32 @@ button.normal{
     height:80px;
 }
 
-.navbar{
+#navbar{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navbar li{
+#navbar.active{
+    right: 0px;
+}
+
+#mobile{
+    display:none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+
+#navbar li{
     list-style: none;
     padding:0 20px;
     position: relative;
 }
 
-.navbar li a{
+#navbar li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -90,13 +106,13 @@ button.normal{
     transition: 0.3s ease;
 }
 
-.navbar li a:hover,
-.navbar li a.active{
+#navbar li a:hover,
+#navbar li a.active{
     color: #ff9f9f;
 }
 
-.navbar li a.active::after,
-.navbar li a:hover::after{
+#navbar li a.active::after,
+#navbar li a:hover::after{
     content: "";
     width: 30%;
     height: 2px;
@@ -311,21 +327,20 @@ button.normal{
     flex-wrap: wrap;
 }
 
-#sm-banner .banner-box{
+#sm-banner .banner-boxx{
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: flex-start;
     background-image: url(images/hero/h2.avif);
     min-width: 580px;
-    max-width: 1000px;
     height: 50vh;
-    padding: 30px;
+    padding: 0px 30px;
     background-size: cover;
     background-position: center;
 }
 
-#sm-banner .banner-box2{
+#sm-banner .banner-boxx2{
     background-image: url(images/banner/b3.jpg);
 }
 
@@ -366,6 +381,13 @@ button.normal{
     color: #ffffff;
 }
 
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
 #banner3 .banner-box{
     display: flex;
     flex-direction: column;
@@ -374,9 +396,9 @@ button.normal{
     background-image: url(images/banner/b4.jpg);
     min-width: 30%;
     height: 30vh;
-    padding: 20px;
     background-size: cover;
     background-position: center;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
@@ -510,4 +532,166 @@ footer .follow i{
 footer .install .row img{
     border:1px solid;
     border-radius: 6px;
+}
+
+footer .col .pay img{
+    border:1px solid;
+    border-radius: 6px;
+    width: 300px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:799px){
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color:#ffe7e7;
+        box-shadow: 0 40px 60px rgb(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #lg-bag{
+        display: none;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+        color: #000000;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display:flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #000000;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    .hero {
+        height: 90vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+    }
+
+    #feature{
+        justify-content: center;
+    }
+
+    #feature .fe-box{
+        margin: 15px 15px;
+    }
+
+    #product .pro-container{
+        justify-content: center;
+    }
+
+    #product .pro{
+        margin: 15px;
+    }
+
+    #banner{
+        height: 20vh;
+    }
+
+    #sm-banner .banner-boxx{
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #banner3{
+        padding: 0 40px;
+    }
+
+    #banner3 .banner-box{
+        width: 28%;
+    }
+
+    #newsletter .form{
+        width: 70%;
+    }
+}
+
+@media(max-width:477px){
+    .header{
+        padding: 10px 30px;
+    }
+    .hero{
+        padding: 20px 20px;
+        background-position: 55%;
+        justify-content:center;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    .section-p1{
+        padding: 20px;
+    }
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #feature{
+        justify-content: space-between;
+    }
+    #product1 .pro-container{
+        width: 100%;
+        padding: 45px;
+    }
+    #banner{
+        height: 40vh;
+    }
+    #sm-banner .banner-boxx{
+        height: 40vh;
+    }
+    #sm-banner .banner-boxx2{
+        margin-top: 20px;
+        height: 40vh;
+    }
+    #banner3{
+        padding: 0 20px;
+    }
+    #banner3 .banner-box{
+        width: 100%;
+    }
+    #newsletter .form{
+        width: 100%;
+    }
+    #newsletter{
+        padding: 40px 20px;
+    }
+    footer .copyright{
+        text-align: start;
+    }
 }
