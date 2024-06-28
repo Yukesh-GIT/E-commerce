@@ -30,8 +30,8 @@ h6{
 }
 
 p{
-    font-size: 16px;
-    color: rgb(139, 139, 139);
+    font-size: 15px;
+    color: rgb(172, 172, 172);
     margin: 15px 0 20px 0;
 }
 
@@ -543,6 +543,121 @@ footer .col .pay img{
 .copyright{
     width: 100%;
     text-align: center;
+}
+
+/* Shop page */
+
+#page-header{
+    background-image: url(images/banner/sb1.1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,p{
+    color: #ffffff;
+    margin-left: 100px;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{  
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ffcbcb;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Single Products */
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+#prodetails .single-pro-image #Mainimg{
+    height: 70%;
+    padding: 10px 12px;
+    border: 1px solid #e7cce3;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: .3s ease;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+    padding: 5px 4px;
+    border: 1px solid #e7cce3;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: .3s ease;
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button{
+    background-color: #ffcbcb;
+    color: #ffffff;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
 }
 
 @media (max-width:799px){
