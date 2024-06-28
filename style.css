@@ -29,9 +29,9 @@ h6{
     font-size: 16px;
 }
 
-p{
+.name2{
     font-size: 15px;
-    color: rgb(172, 172, 172);
+    color: rgb(119, 119, 119);
     margin: 15px 0 20px 0;
 }
 
@@ -589,7 +589,6 @@ footer .col .pay img{
 }
 
 #prodetails .single-pro-image #Mainimg{
-    height: 70%;
     padding: 10px 12px;
     border: 1px solid #e7cce3;
     border-radius: 25px;
@@ -658,6 +657,14 @@ footer .col .pay img{
 
 #prodetails .single-pro-details span{
     line-height: 25px;
+}
+
+/* Blog Page */
+#page-header.blog-header{
+    background-image: url(images/banner/bb1.jpg);
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
 }
 
 @media (max-width:799px){
@@ -808,5 +815,19 @@ footer .col .pay img{
     }
     footer .copyright{
         text-align: start;
+    }
+
+    /* Single Product */
+    #prodetails{
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        width: 100%;
+        padding: 10px;
     }
 }
