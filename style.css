@@ -601,6 +601,7 @@ footer .col .pay img{
 
 #prodetails .single-pro-image #Mainimg{
     padding: 10px 12px;
+    min-height: 100vh;
     border: 1px solid #e7cce3;
     border-radius: 25px;
     cursor: pointer;
