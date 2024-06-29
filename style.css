@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -27,11 +28,12 @@ h4{
 
 h6{
     font-size: 16px;
+    font-weight: 700
 }
 
-.name2{
+p{
     font-size: 15px;
-    color: rgb(119, 119, 119);
+    color: rgb(129, 129, 129);
     margin: 15px 0 20px 0;
 }
 
@@ -563,7 +565,7 @@ footer .col .pay img{
     padding: 14px;
 }
 
-#page-header h2,p{
+#page-header h2{
     color: #ffffff;
     margin-left: 100px;
 }
