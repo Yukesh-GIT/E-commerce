@@ -570,6 +570,11 @@ footer .col .pay img{
     margin-left: 100px;
 }
 
+#page-header p{
+    color: #ffffff;
+    margin-left: 120px;
+}
+
 #pagination{
     text-align: center;
 }
