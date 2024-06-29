@@ -679,6 +679,93 @@ footer .col .pay img{
     flex-direction: column;
 }
 
+#blog{
+    padding: 150px 150px 0 150px;
+}
+
+#blog  .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .blog-details{
+    width: 50%;
+}
+
+#blog .blog-details h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+#blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    top: 4px;
+    right: -60px
+}
+
+#blog .blog-details a:hover{
+    color: #ffcbcb;
+}
+
+#blog .blog-details a:hover::after{
+    background-color: #ffcbcb;
+}
+
+#blog .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c7c7c7;
+    z-index: -1;
+}
+
+#blog .blog-details p{
+    color: #9c9c9c;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Page */
+#page-header.about-header{
+    background-image: url(images/banner/bb1.jpg);
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+}
+
 @media (max-width:799px){
     .section-p1{
         padding: 40px 40px;
@@ -841,5 +928,22 @@ footer .col .pay img{
     #prodetails .single-pro-details{
         width: 100%;
         padding: 10px;
+    }
+    /* Blog Page */
+    .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog{
+        padding: 100px 20px 0 20px;
+    }
+    #blog .blog-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details {
+        width: 100%;
     }
 }
