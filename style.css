@@ -940,6 +940,10 @@ footer .col .pay img{
     white-space: nowrap
 }
 
+#cart tr td i{
+    color: #000000;
+}
+
 #cart table img{
     width: 70px;
     height: auto;
@@ -1044,8 +1048,6 @@ footer .col .pay img{
     font-size: 13px;
 }
 
-
-
 @media (max-width:799px){
     .section-p1{
         padding: 40px 40px;
@@ -1145,6 +1147,11 @@ footer .col .pay img{
     }
     #form-details form{
         width: 50%;
+    }
+
+    /* Cart Page */
+    #cart{
+        overflow-x: auto;
     }
 }
 
@@ -1269,5 +1276,22 @@ footer .col .pay img{
     #form-details form{
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    /* Cart Page */
+    #cart-header{
+        flex-wrap: wrap;
+        height: 20vh;
+    }
+
+    #cart-add{
+        flex-direction: column;
+    }
+    #coupon{
+        width: 100%;
+    }
+    #subtotal{
+        width: 100%;
+        padding: 20px;
     }
 }
