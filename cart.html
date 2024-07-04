@@ -13,10 +13,10 @@
             <ul class="navbar" id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <a href="#" id = "close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
@@ -26,73 +26,78 @@
         </div>
     </section>
 
-    <section id="page-header" class="blog-header">
-        <h2>#readmore</h2>
-        <p>Read all case studies abput our products</p>
+    <section id="cart-header" class="cart-header">
+        <h2>#Your Cart</h2>
+        <p>Enjoy your shopping</p>
     </section>
 
-    <section id="blog">
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="images/blog/bl1.jpeg" alt="blog-1">
-            </div>
-            <div class="blog-details">
-                <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-                    <p>Kickstarter man braid godard coloring book. Racelette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
-                <a href="#">CONTINUE READING</a>
-            </div>
-            <h1>13/01</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="images/blog/bl2.jpeg" alt="blog-2">
-            </div>
-            <div class="blog-details">
-                <h4>How to style a Quiff</h4>
-                    <p>Kickstarter man braid godard coloring book. Racelette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
-                <a href="#">CONTINUE READING</a>
-            </div>
-            <h1>13/04</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="images/blog/bl3.jpeg" alt="blog-3">
-            </div>
-            <div class="blog-details">
-                <h4>Must-Have Skater Girl items</h4>
-                    <p>Kickstarter man braid godard coloring book. Racelette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
-                <a href="#">CONTINUE READING</a>
-            </div>
-            <h1>13/01</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="images/blog/bl4.webp" alt="blog-4">
-            </div>
-            <div class="blog-details">
-                <h4>Runaway -Inspired Trends</h4>
-                    <p>Kickstarter man braid godard coloring book. Racelette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
-                <a href="#">CONTINUE READING</a>
-            </div>
-            <h1>12/01</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="images/blog/bl5.jpeg" alt="blog-5">
-            </div>
-            <div class="blog-details">
-                <h4>Aw20 Menswear Trends</h4>
-                    <p>Kickstarter man braid godard coloring book. Racelette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
-                <a href="#">CONTINUE READING</a>
-            </div>
-            <h1>10/03</h1>
-        </div>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="images/products/pro1.jpg" alt=""></td>
+                    <td>Cartoon Astraphet T-Shirt</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="images/products/pro2.jpg" alt=""></td>
+                    <td>Cartoon Astraphet T-Shirt</td>
+                    <td>$120</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$120</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="images/products/pro3.jpg" alt=""></td>
+                    <td>Cartoon Astraphet T-Shirt</td>
+                    <td>$112.29</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$112.29</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="pagination" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
     </section>
 
     <section id="newsletter" class="section-p1 section-m1">
