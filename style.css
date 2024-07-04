@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -26,13 +27,15 @@ h4{
 }
 
 h6{
+    font-weight: 700;
     font-size: 16px;
 }
 
-.name2{
-    font-size: 15px;
-    color: rgb(119, 119, 119);
+p {
+    font-size: 16px;
     margin: 15px 0 20px 0;
+    background-color: black;
+    color: #465b52;
 }
 
 .section-p1{
